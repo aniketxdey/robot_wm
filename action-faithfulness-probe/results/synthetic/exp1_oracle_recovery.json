@@ -1,0 +1,856 @@
+{
+  "protocol": {
+    "n_episodes": 16,
+    "horizon": 12,
+    "size": 64,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "noise": 0.04,
+    "data_seed": 0,
+    "action_gains": [
+      0.0,
+      0.12,
+      0.3,
+      0.6,
+      1.0
+    ],
+    "instruction_gains": [
+      0.0,
+      0.15,
+      0.4,
+      1.0
+    ],
+    "distance": "pixel_l2"
+  },
+  "rows": [
+    {
+      "true_action_gain": 0.0,
+      "true_instruction_gain": 0.0,
+      "recovered_gain_action": 0.0,
+      "recovered_gain_instruction": 0.0,
+      "sens_action_share": 0.0,
+      "sens_instruction_share": 0.0,
+      "monotonicity_rho": 0.4148733995436351,
+      "separation_ratio": 0.0,
+      "verdict": "inert",
+      "gates": {
+        "reactivity_ok": false,
+        "null_floor_ok": true,
+        "monotonicity_ok": false,
+        "separation_ok": false
+      },
+      "stats": {
+        "reactivity[negate>floor]": {
+          "p_value": 1.0,
+          "observed": -0.0036144661193247885,
+          "effect_size": -12.787843608986307,
+          "p_holm": 1.0
+        },
+        "separation[random_action>3x_floor]": {
+          "p_value": 1.0,
+          "observed": -0.010843398357974366,
+          "effect_size": -12.787843608986307,
+          "p_holm": 1.0
+        },
+        "cf_instruction>floor": {
+          "p_value": 1.0,
+          "observed": -0.0036144661193247885,
+          "effect_size": -12.787843608986307,
+          "p_holm": 1.0
+        }
+      }
+    },
+    {
+      "true_action_gain": 0.0,
+      "true_instruction_gain": 0.15,
+      "recovered_gain_action": 0.0,
+      "recovered_gain_instruction": 0.027177384396778696,
+      "sens_action_share": 0.0,
+      "sens_instruction_share": 0.9999999999800089,
+      "monotonicity_rho": 0.4148733995436351,
+      "separation_ratio": 0.0,
+      "verdict": "instruction-driven",
+      "gates": {
+        "reactivity_ok": false,
+        "null_floor_ok": true,
+        "monotonicity_ok": false,
+        "separation_ok": false
+      },
+      "stats": {
+        "reactivity[negate>floor]": {
+          "p_value": 1.0,
+          "observed": -0.003616611946199555,
+          "effect_size": -13.226857643583774,
+          "p_holm": 1.0
+        },
+        "separation[random_action>3x_floor]": {
+          "p_value": 1.0,
+          "observed": -0.010849835838598665,
+          "effect_size": -13.226857643583774,
+          "p_holm": 1.0
+        },
+        "cf_instruction>floor": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.058236670440237503,
+          "effect_size": 2.45732817815117,
+          "p_holm": 0.00029997000299970003
+        }
+      }
+    },
+    {
+      "true_action_gain": 0.0,
+      "true_instruction_gain": 0.4,
+      "recovered_gain_action": 0.0,
+      "recovered_gain_instruction": 0.053529625008963244,
+      "sens_action_share": 0.0,
+      "sens_instruction_share": 0.9999999999886687,
+      "monotonicity_rho": 0.4148733995436351,
+      "separation_ratio": 0.0,
+      "verdict": "instruction-driven",
+      "gates": {
+        "reactivity_ok": false,
+        "null_floor_ok": true,
+        "monotonicity_ok": false,
+        "separation_ok": false
+      },
+      "stats": {
+        "reactivity[negate>floor]": {
+          "p_value": 1.0,
+          "observed": -0.0036416162438399624,
+          "effect_size": -14.961697264528082,
+          "p_holm": 1.0
+        },
+        "separation[random_action>3x_floor]": {
+          "p_value": 1.0,
+          "observed": -0.010924848731519887,
+          "effect_size": -14.961697264528086,
+          "p_holm": 1.0
+        },
+        "cf_instruction>floor": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.11822619762460818,
+          "effect_size": 2.7966174923360794,
+          "p_holm": 0.00029997000299970003
+        }
+      }
+    },
+    {
+      "true_action_gain": 0.0,
+      "true_instruction_gain": 1.0,
+      "recovered_gain_action": 0.0,
+      "recovered_gain_instruction": 0.057623063709148444,
+      "sens_action_share": 0.0,
+      "sens_instruction_share": 0.9999999999859558,
+      "monotonicity_rho": 0.4148733995436351,
+      "separation_ratio": 0.0,
+      "verdict": "instruction-driven",
+      "gates": {
+        "reactivity_ok": false,
+        "null_floor_ok": true,
+        "monotonicity_ok": false,
+        "separation_ok": false
+      },
+      "stats": {
+        "reactivity[negate>floor]": {
+          "p_value": 1.0,
+          "observed": -0.0034563406952656806,
+          "effect_size": -17.78983601880498,
+          "p_holm": 1.0
+        },
+        "separation[random_action>3x_floor]": {
+          "p_value": 1.0,
+          "observed": -0.010369022085797042,
+          "effect_size": -17.789836018804987,
+          "p_holm": 1.0
+        },
+        "cf_instruction>floor": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.14482362422859296,
+          "effect_size": 3.7762709138717003,
+          "p_holm": 0.00029997000299970003
+        }
+      }
+    },
+    {
+      "true_action_gain": 0.12,
+      "true_instruction_gain": 0.0,
+      "recovered_gain_action": 0.012739386488333731,
+      "recovered_gain_instruction": 0.0,
+      "sens_action_share": 0.9999999999405855,
+      "sens_instruction_share": 0.0,
+      "monotonicity_rho": 0.9505537730685134,
+      "separation_ratio": 17.346704835585633,
+      "verdict": "action-faithful",
+      "gates": {
+        "reactivity_ok": true,
+        "null_floor_ok": true,
+        "monotonicity_ok": true,
+        "separation_ok": true
+      },
+      "stats": {
+        "reactivity[negate>floor]": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.09929217922035603,
+          "effect_size": 3.1786612890544568,
+          "p_holm": 0.00029997000299970003
+        },
+        "separation[random_action>3x_floor]": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.053684214246459305,
+          "effect_size": 2.0093441790968707,
+          "p_holm": 0.00029997000299970003
+        },
+        "cf_instruction>floor": {
+          "p_value": 1.0,
+          "observed": -0.003648151527158916,
+          "effect_size": -15.168676695370069,
+          "p_holm": 1.0
+        }
+      }
+    },
+    {
+      "true_action_gain": 0.12,
+      "true_instruction_gain": 0.15,
+      "recovered_gain_action": 0.01272575782128134,
+      "recovered_gain_instruction": 0.02733419814944309,
+      "sens_action_share": 0.249913405226108,
+      "sens_instruction_share": 0.7500865947589946,
+      "monotonicity_rho": 0.9505537730685134,
+      "separation_ratio": 17.32957440662179,
+      "verdict": "instruction-driven",
+      "gates": {
+        "reactivity_ok": true,
+        "null_floor_ok": true,
+        "monotonicity_ok": true,
+        "separation_ok": true
+      },
+      "stats": {
+        "reactivity[negate>floor]": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.09920059664582367,
+          "effect_size": 3.2131002918566174,
+          "p_holm": 0.00029997000299970003
+        },
+        "separation[random_action>3x_floor]": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.05370606447395403,
+          "effect_size": 2.0027240294296464,
+          "p_holm": 0.00029997000299970003
+        },
+        "cf_instruction>floor": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.058743380321539,
+          "effect_size": 2.489443238804573,
+          "p_holm": 0.00029997000299970003
+        }
+      }
+    },
+    {
+      "true_action_gain": 0.12,
+      "true_instruction_gain": 0.4,
+      "recovered_gain_action": 0.01271515659720556,
+      "recovered_gain_instruction": 0.053620652380999556,
+      "sens_action_share": 0.15907291484746844,
+      "sens_instruction_share": 0.8409270851430007,
+      "monotonicity_rho": 0.9505537730685134,
+      "separation_ratio": 17.34438425354778,
+      "verdict": "instruction-driven",
+      "gates": {
+        "reactivity_ok": true,
+        "null_floor_ok": true,
+        "monotonicity_ok": true,
+        "separation_ok": true
+      },
+      "stats": {
+        "reactivity[negate>floor]": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.09955779719457494,
+          "effect_size": 3.2124574673252417,
+          "p_holm": 0.00029997000299970003
+        },
+        "separation[random_action>3x_floor]": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.05404010637139435,
+          "effect_size": 1.9911484590055808,
+          "p_holm": 0.00029997000299970003
+        },
+        "cf_instruction>floor": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.11875566910312044,
+          "effect_size": 2.7998221233251797,
+          "p_holm": 0.00029997000299970003
+        }
+      }
+    },
+    {
+      "true_action_gain": 0.12,
+      "true_instruction_gain": 1.0,
+      "recovered_gain_action": 0.012698157532038304,
+      "recovered_gain_instruction": 0.057243716243180386,
+      "sens_action_share": 0.18756364462315767,
+      "sens_instruction_share": 0.8124363553651667,
+      "monotonicity_rho": 0.9505537730685134,
+      "separation_ratio": 17.556995098302885,
+      "verdict": "instruction-driven",
+      "gates": {
+        "reactivity_ok": true,
+        "null_floor_ok": true,
+        "monotonicity_ok": true,
+        "separation_ok": true
+      },
+      "stats": {
+        "reactivity[negate>floor]": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.09263483422892022,
+          "effect_size": 3.2122591642110803,
+          "p_holm": 0.00029997000299970003
+        },
+        "separation[random_action>3x_floor]": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.0493471191615754,
+          "effect_size": 2.26231945588711,
+          "p_holm": 0.00029997000299970003
+        },
+        "cf_instruction>floor": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.1399392870915108,
+          "effect_size": 3.8865065815803734,
+          "p_holm": 0.00029997000299970003
+        }
+      }
+    },
+    {
+      "true_action_gain": 0.3,
+      "true_instruction_gain": 0.0,
+      "recovered_gain_action": 0.030624525903970256,
+      "recovered_gain_instruction": 0.0,
+      "sens_action_share": 0.9999999999753583,
+      "sens_instruction_share": 0.0,
+      "monotonicity_rho": 0.9717557159622349,
+      "separation_ratio": 33.54713327288858,
+      "verdict": "action-faithful",
+      "gates": {
+        "reactivity_ok": true,
+        "null_floor_ok": true,
+        "monotonicity_ok": true,
+        "separation_ok": true
+      },
+      "stats": {
+        "reactivity[negate>floor]": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.14157963500838378,
+          "effect_size": 3.785940904743831,
+          "p_holm": 0.00029997000299970003
+        },
+        "separation[random_action>3x_floor]": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.1059383706706285,
+          "effect_size": 2.6191695146730525,
+          "p_holm": 0.00029997000299970003
+        },
+        "cf_instruction>floor": {
+          "p_value": 1.0,
+          "observed": -0.0036670555964519735,
+          "effect_size": -17.536622670990685,
+          "p_holm": 1.0
+        }
+      }
+    },
+    {
+      "true_action_gain": 0.3,
+      "true_instruction_gain": 0.15,
+      "recovered_gain_action": 0.03060237736115363,
+      "recovered_gain_instruction": 0.027582282904627765,
+      "sens_action_share": 0.44461904650173456,
+      "sens_instruction_share": 0.5553809534872656,
+      "monotonicity_rho": 0.9717557159622349,
+      "separation_ratio": 33.54778512787436,
+      "verdict": "balanced",
+      "gates": {
+        "reactivity_ok": true,
+        "null_floor_ok": true,
+        "monotonicity_ok": true,
+        "separation_ok": true
+      },
+      "stats": {
+        "reactivity[negate>floor]": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.14104215384722918,
+          "effect_size": 3.8222084341825298,
+          "p_holm": 0.00029997000299970003
+        },
+        "separation[random_action>3x_floor]": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.10550995715748285,
+          "effect_size": 2.6219138296720055,
+          "p_holm": 0.00029997000299970003
+        },
+        "cf_instruction>floor": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.05880346699414076,
+          "effect_size": 2.4695188641191432,
+          "p_holm": 0.00029997000299970003
+        }
+      }
+    },
+    {
+      "true_action_gain": 0.3,
+      "true_instruction_gain": 0.4,
+      "recovered_gain_action": 0.030369695171672248,
+      "recovered_gain_instruction": 0.053794079166385504,
+      "sens_action_share": 0.3135827969505748,
+      "sens_instruction_share": 0.6864172030415524,
+      "monotonicity_rho": 0.9717557159622349,
+      "separation_ratio": 33.810296284482874,
+      "verdict": "instruction-driven",
+      "gates": {
+        "reactivity_ok": true,
+        "null_floor_ok": true,
+        "monotonicity_ok": true,
+        "separation_ok": true
+      },
+      "stats": {
+        "reactivity[negate>floor]": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.13912525960058703,
+          "effect_size": 3.8555333878000324,
+          "p_holm": 0.00029997000299970003
+        },
+        "separation[random_action>3x_floor]": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.10401342648456194,
+          "effect_size": 2.6830349279954886,
+          "p_holm": 0.00029997000299970003
+        },
+        "cf_instruction>floor": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.11583966948837769,
+          "effect_size": 2.6844346208058822,
+          "p_holm": 0.00029997000299970003
+        }
+      }
+    },
+    {
+      "true_action_gain": 0.3,
+      "true_instruction_gain": 1.0,
+      "recovered_gain_action": 0.029313107558515517,
+      "recovered_gain_instruction": 0.05739001736773063,
+      "sens_action_share": 0.3331765260683609,
+      "sens_instruction_share": 0.6668234739224362,
+      "monotonicity_rho": 0.9717557159622349,
+      "separation_ratio": 34.88324329264715,
+      "verdict": "instruction-driven",
+      "gates": {
+        "reactivity_ok": true,
+        "null_floor_ok": true,
+        "monotonicity_ok": true,
+        "separation_ok": true
+      },
+      "stats": {
+        "reactivity[negate>floor]": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.1288483477619593,
+          "effect_size": 3.956643958323725,
+          "p_holm": 0.00029997000299970003
+        },
+        "separation[random_action>3x_floor]": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.09174248444469413,
+          "effect_size": 2.7119372360063516,
+          "p_holm": 0.00029997000299970003
+        },
+        "cf_instruction>floor": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.1351218418640201,
+          "effect_size": 3.886449910292155,
+          "p_holm": 0.00029997000299970003
+        }
+      }
+    },
+    {
+      "true_action_gain": 0.6,
+      "true_instruction_gain": 0.0,
+      "recovered_gain_action": 0.04995436561432487,
+      "recovered_gain_instruction": 0.0,
+      "sens_action_share": 0.9999999999844515,
+      "sens_instruction_share": 0.0,
+      "monotonicity_rho": 0.9540874302174671,
+      "separation_ratio": 46.50061170645951,
+      "verdict": "action-faithful",
+      "gates": {
+        "reactivity_ok": true,
+        "null_floor_ok": true,
+        "monotonicity_ok": true,
+        "separation_ok": true
+      },
+      "stats": {
+        "reactivity[negate>floor]": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.14429853165838724,
+          "effect_size": 3.7365767051417693,
+          "p_holm": 0.00029997000299970003
+        },
+        "separation[random_action>3x_floor]": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.12830718304048788,
+          "effect_size": 3.256096164738875,
+          "p_holm": 0.00029997000299970003
+        },
+        "cf_instruction>floor": {
+          "p_value": 1.0,
+          "observed": -0.0030588660543799055,
+          "effect_size": -4.090103976416826,
+          "p_holm": 1.0
+        }
+      }
+    },
+    {
+      "true_action_gain": 0.6,
+      "true_instruction_gain": 0.15,
+      "recovered_gain_action": 0.049860489038494514,
+      "recovered_gain_instruction": 0.025960359516465015,
+      "sens_action_share": 0.5967628154259845,
+      "sens_instruction_share": 0.40323718456464963,
+      "monotonicity_rho": 0.9540874302174671,
+      "separation_ratio": 46.17664301486541,
+      "verdict": "action-faithful",
+      "gates": {
+        "reactivity_ok": true,
+        "null_floor_ok": true,
+        "monotonicity_ok": true,
+        "separation_ok": true
+      },
+      "stats": {
+        "reactivity[negate>floor]": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.1446000910591465,
+          "effect_size": 3.7930527742401132,
+          "p_holm": 0.00029997000299970003
+        },
+        "separation[random_action>3x_floor]": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.12813028048094566,
+          "effect_size": 3.248635384461106,
+          "p_holm": 0.00029997000299970003
+        },
+        "cf_instruction>floor": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.0495751578355339,
+          "effect_size": 1.7060273903503136,
+          "p_holm": 0.00029997000299970003
+        }
+      }
+    },
+    {
+      "true_action_gain": 0.6,
+      "true_instruction_gain": 0.4,
+      "recovered_gain_action": 0.048968709182826885,
+      "recovered_gain_instruction": 0.050955477420710986,
+      "sens_action_share": 0.44240435409642603,
+      "sens_instruction_share": 0.5575956458961501,
+      "monotonicity_rho": 0.9540874302174671,
+      "separation_ratio": 46.25878322273801,
+      "verdict": "balanced",
+      "gates": {
+        "reactivity_ok": true,
+        "null_floor_ok": true,
+        "monotonicity_ok": true,
+        "separation_ok": true
+      },
+      "stats": {
+        "reactivity[negate>floor]": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.1443695304538778,
+          "effect_size": 3.7850303701252153,
+          "p_holm": 0.00029997000299970003
+        },
+        "separation[random_action>3x_floor]": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.1264690494897877,
+          "effect_size": 3.210026463430538,
+          "p_holm": 0.00029997000299970003
+        },
+        "cf_instruction>floor": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.09898961133749254,
+          "effect_size": 2.0437520344347355,
+          "p_holm": 0.00029997000299970003
+        }
+      }
+    },
+    {
+      "true_action_gain": 0.6,
+      "true_instruction_gain": 1.0,
+      "recovered_gain_action": 0.04521025860568396,
+      "recovered_gain_instruction": 0.05650740756281098,
+      "sens_action_share": 0.42931852169027024,
+      "sens_instruction_share": 0.5706814783011936,
+      "monotonicity_rho": 0.9505537730685134,
+      "separation_ratio": 49.14747015158429,
+      "verdict": "instruction-driven",
+      "gates": {
+        "reactivity_ok": true,
+        "null_floor_ok": true,
+        "monotonicity_ok": true,
+        "separation_ok": true
+      },
+      "stats": {
+        "reactivity[negate>floor]": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.13792472821496632,
+          "effect_size": 4.041810912553092,
+          "p_holm": 0.00029997000299970003
+        },
+        "separation[random_action>3x_floor]": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.11345592885718361,
+          "effect_size": 2.76367030684509,
+          "p_holm": 0.00029997000299970003
+        },
+        "cf_instruction>floor": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.12154276319615748,
+          "effect_size": 3.127129497274262,
+          "p_holm": 0.00029997000299970003
+        }
+      }
+    },
+    {
+      "true_action_gain": 1.0,
+      "true_instruction_gain": 0.0,
+      "recovered_gain_action": 0.05587665706968628,
+      "recovered_gain_instruction": 0.0,
+      "sens_action_share": 0.9999999999828294,
+      "sens_instruction_share": 0.0,
+      "monotonicity_rho": 0.9258181730258385,
+      "separation_ratio": 58.35495686988512,
+      "verdict": "action-faithful",
+      "gates": {
+        "reactivity_ok": true,
+        "null_floor_ok": true,
+        "monotonicity_ok": true,
+        "separation_ok": true
+      },
+      "stats": {
+        "reactivity[negate>floor]": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.13711158452642846,
+          "effect_size": 3.660845973356044,
+          "p_holm": 0.00029997000299970003
+        },
+        "separation[random_action>3x_floor]": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.1306128740150598,
+          "effect_size": 3.7655886654185924,
+          "p_holm": 0.00029997000299970003
+        },
+        "cf_instruction>floor": {
+          "p_value": 1.0,
+          "observed": -0.0021827529548318126,
+          "effect_size": -1.727762298259871,
+          "p_holm": 1.0
+        }
+      }
+    },
+    {
+      "true_action_gain": 1.0,
+      "true_instruction_gain": 0.15,
+      "recovered_gain_action": 0.05546423947365665,
+      "recovered_gain_instruction": 0.022327645248975212,
+      "sens_action_share": 0.6715312609178932,
+      "sens_instruction_share": 0.32846873907099006,
+      "monotonicity_rho": 0.9258181730258385,
+      "separation_ratio": 58.37620899356425,
+      "verdict": "action-faithful",
+      "gates": {
+        "reactivity_ok": true,
+        "null_floor_ok": true,
+        "monotonicity_ok": true,
+        "separation_ok": true
+      },
+      "stats": {
+        "reactivity[negate>floor]": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.13731016872588953,
+          "effect_size": 3.684031723723185,
+          "p_holm": 0.00029997000299970003
+        },
+        "separation[random_action>3x_floor]": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.13006402371865988,
+          "effect_size": 3.6495803891493774,
+          "p_holm": 0.00029997000299970003
+        },
+        "cf_instruction>floor": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.03375595594661718,
+          "effect_size": 1.249102910261564,
+          "p_holm": 0.00029997000299970003
+        }
+      }
+    },
+    {
+      "true_action_gain": 1.0,
+      "true_instruction_gain": 0.4,
+      "recovered_gain_action": 0.054780557627561184,
+      "recovered_gain_instruction": 0.04664998496624109,
+      "sens_action_share": 0.5011110899680441,
+      "sens_instruction_share": 0.4988889100241345,
+      "monotonicity_rho": 0.9258181730258385,
+      "separation_ratio": 59.01781210276995,
+      "verdict": "balanced",
+      "gates": {
+        "reactivity_ok": true,
+        "null_floor_ok": true,
+        "monotonicity_ok": true,
+        "separation_ok": true
+      },
+      "stats": {
+        "reactivity[negate>floor]": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.1373728156011566,
+          "effect_size": 3.8113647846371523,
+          "p_holm": 0.00029997000299970003
+        },
+        "separation[random_action>3x_floor]": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.12775716583691976,
+          "effect_size": 3.3925445926818023,
+          "p_holm": 0.00029997000299970003
+        },
+        "cf_instruction>floor": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.0787355943737566,
+          "effect_size": 1.6024642439170949,
+          "p_holm": 0.00029997000299970003
+        }
+      }
+    },
+    {
+      "true_action_gain": 1.0,
+      "true_instruction_gain": 1.0,
+      "recovered_gain_action": 0.05148629388026275,
+      "recovered_gain_instruction": 0.05601457310862238,
+      "sens_action_share": 0.46239190672146396,
+      "sens_instruction_share": 0.5376080932710364,
+      "monotonicity_rho": 0.9611547445153741,
+      "separation_ratio": 59.47047311786434,
+      "verdict": "balanced",
+      "gates": {
+        "reactivity_ok": true,
+        "null_floor_ok": true,
+        "monotonicity_ok": true,
+        "separation_ok": true
+      },
+      "stats": {
+        "reactivity[negate>floor]": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.1333884316201875,
+          "effect_size": 4.2725894689858785,
+          "p_holm": 0.00029997000299970003
+        },
+        "separation[random_action>3x_floor]": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.11623473999097769,
+          "effect_size": 2.729163043981582,
+          "p_holm": 0.00029997000299970003
+        },
+        "cf_instruction>floor": {
+          "p_value": 9.999000099990002e-05,
+          "observed": 0.11180369869653078,
+          "effect_size": 2.383000287989045,
+          "p_holm": 0.00029997000299970003
+        }
+      }
+    }
+  ],
+  "h1a_action_axis_recovery": [
+    {
+      "fixed_instruction_gain": 0.0,
+      "spearman_rho": 0.9999999999999999
+    },
+    {
+      "fixed_instruction_gain": 0.15,
+      "spearman_rho": 0.9999999999999999
+    },
+    {
+      "fixed_instruction_gain": 0.4,
+      "spearman_rho": 0.9999999999999999
+    },
+    {
+      "fixed_instruction_gain": 1.0,
+      "spearman_rho": 0.9999999999999999
+    }
+  ],
+  "h1b_instruction_axis_recovery": [
+    {
+      "fixed_action_gain": 0.0,
+      "spearman_rho": 1.0
+    },
+    {
+      "fixed_action_gain": 0.12,
+      "spearman_rho": 1.0
+    },
+    {
+      "fixed_action_gain": 0.3,
+      "spearman_rho": 1.0
+    },
+    {
+      "fixed_action_gain": 0.6,
+      "spearman_rho": 1.0
+    },
+    {
+      "fixed_action_gain": 1.0,
+      "spearman_rho": 1.0
+    }
+  ],
+  "h2_leakage_instr_into_action": [
+    {
+      "fixed_action_gain": 0.0,
+      "spearman_rho": NaN
+    },
+    {
+      "fixed_action_gain": 0.12,
+      "spearman_rho": -1.0
+    },
+    {
+      "fixed_action_gain": 0.3,
+      "spearman_rho": -1.0
+    },
+    {
+      "fixed_action_gain": 0.6,
+      "spearman_rho": -1.0
+    },
+    {
+      "fixed_action_gain": 1.0,
+      "spearman_rho": -1.0
+    }
+  ],
+  "h2_leakage_action_into_instr": [
+    {
+      "fixed_instruction_gain": 0.0,
+      "spearman_rho": NaN
+    },
+    {
+      "fixed_instruction_gain": 0.15,
+      "spearman_rho": -0.6
+    },
+    {
+      "fixed_instruction_gain": 0.4,
+      "spearman_rho": -0.6
+    },
+    {
+      "fixed_instruction_gain": 1.0,
+      "spearman_rho": -0.8999999999999998
+    }
+  ],
+  "h3_inert_verdict": "inert",
+  "global_spearman_action": 0.984731927834662,
+  "global_spearman_instruction": 0.9768308314557045,
+  "elapsed_seconds": 10.888442993164062
+}

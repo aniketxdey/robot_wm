@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# AFP outputs (regenerable). Keep the committed demo under results/ if desired.
+/tmp/afp_*
+*.mp4
+
+# Large external assets — never commit checkpoints or datasets
+checkpoints/
+datasets/
+weights/
+models/
+*.safetensors
+*.ckpt
+*.pth
+*.tar
+*.tar.gz
+*.zip
+
+# OS
+.DS_Store

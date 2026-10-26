@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "afp"
+version = "0.1.0"
+description = "Action-Faithfulness Probe: a training-free, judge-free, horizon-resolved benchmark for action-conditioned video world models."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "AFP authors" }]
+keywords = ["world-models", "robotics", "benchmark", "action-faithfulness", "video-prediction"]
+
+# Core dependencies kept deliberately light so the harness + mock world model
+# run on CPU with no GPU / no checkpoint. Heavy/optional backends are extras.
+dependencies = [
+    "numpy>=1.23",
+]
+
+[project.optional-dependencies]
+# Perceptual distance backends (real metrics). Pixel-L2 needs nothing extra.
+lpips = ["torch>=2.0", "torchvision>=0.15", "lpips>=0.1.4"]
+dreamsim = ["torch>=2.0", "dreamsim>=0.2.0"]
+# Reporting / plotting.
+plots = ["matplotlib>=3.5"]
+# Statistics (Spearman, bootstrap). AFP ships a numpy fallback if scipy is absent.
+stats = ["scipy>=1.7"]
+# Everything for development + the end-to-end mock run.
+dev = [
+    "matplotlib>=3.5",
+    "scipy>=1.7",
+    "pytest>=7.0",
+]
+# Real action-conditioned checkpoints (each adapter documents its own setup).
+cosmos = ["torch>=2.0"]
+all = ["torch>=2.0", "torchvision>=0.15", "lpips>=0.1.4", "matplotlib>=3.5", "scipy>=1.7", "pytest>=7.0"]
+
+[project.scripts]
+afp = "afp.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["afp*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

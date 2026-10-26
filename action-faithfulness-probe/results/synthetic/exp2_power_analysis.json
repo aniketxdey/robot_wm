@@ -1,0 +1,429 @@
+{
+  "protocol": {
+    "horizon": 12,
+    "size": 64,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "sigma_ladder": [
+      0.05,
+      0.1,
+      0.2,
+      0.4
+    ],
+    "instruction_fracs": [
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "alpha": 0.05,
+    "replicates": 10,
+    "rollouts_per_episode": 23,
+    "instruction_gain_fixed": 0.3,
+    "distance": "pixel_l2"
+  },
+  "cells": [
+    {
+      "noise": 0.04,
+      "true_action_gain": 0.0,
+      "n_episodes": 4,
+      "replicates": 10,
+      "power_permutation": 0.0,
+      "power_ci_gate": 0.0,
+      "median_p_holm": 1.0
+    },
+    {
+      "noise": 0.04,
+      "true_action_gain": 0.0,
+      "n_episodes": 8,
+      "replicates": 10,
+      "power_permutation": 0.0,
+      "power_ci_gate": 0.0,
+      "median_p_holm": 1.0
+    },
+    {
+      "noise": 0.04,
+      "true_action_gain": 0.0,
+      "n_episodes": 16,
+      "replicates": 10,
+      "power_permutation": 0.0,
+      "power_ci_gate": 0.0,
+      "median_p_holm": 1.0
+    },
+    {
+      "noise": 0.04,
+      "true_action_gain": 0.0,
+      "n_episodes": 32,
+      "replicates": 10,
+      "power_permutation": 0.0,
+      "power_ci_gate": 0.0,
+      "median_p_holm": 1.0
+    },
+    {
+      "noise": 0.04,
+      "true_action_gain": 0.03,
+      "n_episodes": 4,
+      "replicates": 10,
+      "power_permutation": 0.0,
+      "power_ci_gate": 1.0,
+      "median_p_holm": 0.1865813418658134
+    },
+    {
+      "noise": 0.04,
+      "true_action_gain": 0.03,
+      "n_episodes": 8,
+      "replicates": 10,
+      "power_permutation": 1.0,
+      "power_ci_gate": 1.0,
+      "median_p_holm": 0.012598740125987402
+    },
+    {
+      "noise": 0.04,
+      "true_action_gain": 0.03,
+      "n_episodes": 16,
+      "replicates": 10,
+      "power_permutation": 1.0,
+      "power_ci_gate": 1.0,
+      "median_p_holm": 0.00029997000299970003
+    },
+    {
+      "noise": 0.04,
+      "true_action_gain": 0.03,
+      "n_episodes": 32,
+      "replicates": 10,
+      "power_permutation": 1.0,
+      "power_ci_gate": 1.0,
+      "median_p_holm": 0.00029997000299970003
+    },
+    {
+      "noise": 0.04,
+      "true_action_gain": 0.06,
+      "n_episodes": 4,
+      "replicates": 10,
+      "power_permutation": 0.0,
+      "power_ci_gate": 1.0,
+      "median_p_holm": 0.1865813418658134
+    },
+    {
+      "noise": 0.04,
+      "true_action_gain": 0.06,
+      "n_episodes": 8,
+      "replicates": 10,
+      "power_permutation": 1.0,
+      "power_ci_gate": 1.0,
+      "median_p_holm": 0.012598740125987402
+    },
+    {
+      "noise": 0.04,
+      "true_action_gain": 0.06,
+      "n_episodes": 16,
+      "replicates": 10,
+      "power_permutation": 1.0,
+      "power_ci_gate": 1.0,
+      "median_p_holm": 0.00029997000299970003
+    },
+    {
+      "noise": 0.04,
+      "true_action_gain": 0.06,
+      "n_episodes": 32,
+      "replicates": 10,
+      "power_permutation": 1.0,
+      "power_ci_gate": 1.0,
+      "median_p_holm": 0.00029997000299970003
+    },
+    {
+      "noise": 0.04,
+      "true_action_gain": 0.12,
+      "n_episodes": 4,
+      "replicates": 10,
+      "power_permutation": 0.0,
+      "power_ci_gate": 1.0,
+      "median_p_holm": 0.1865813418658134
+    },
+    {
+      "noise": 0.04,
+      "true_action_gain": 0.12,
+      "n_episodes": 8,
+      "replicates": 10,
+      "power_permutation": 1.0,
+      "power_ci_gate": 1.0,
+      "median_p_holm": 0.012598740125987402
+    },
+    {
+      "noise": 0.04,
+      "true_action_gain": 0.12,
+      "n_episodes": 16,
+      "replicates": 10,
+      "power_permutation": 1.0,
+      "power_ci_gate": 1.0,
+      "median_p_holm": 0.00029997000299970003
+    },
+    {
+      "noise": 0.04,
+      "true_action_gain": 0.12,
+      "n_episodes": 32,
+      "replicates": 10,
+      "power_permutation": 1.0,
+      "power_ci_gate": 1.0,
+      "median_p_holm": 0.00029997000299970003
+    },
+    {
+      "noise": 0.04,
+      "true_action_gain": 0.3,
+      "n_episodes": 4,
+      "replicates": 10,
+      "power_permutation": 0.0,
+      "power_ci_gate": 1.0,
+      "median_p_holm": 0.1865813418658134
+    },
+    {
+      "noise": 0.04,
+      "true_action_gain": 0.3,
+      "n_episodes": 8,
+      "replicates": 10,
+      "power_permutation": 1.0,
+      "power_ci_gate": 1.0,
+      "median_p_holm": 0.012598740125987402
+    },
+    {
+      "noise": 0.04,
+      "true_action_gain": 0.3,
+      "n_episodes": 16,
+      "replicates": 10,
+      "power_permutation": 1.0,
+      "power_ci_gate": 1.0,
+      "median_p_holm": 0.00029997000299970003
+    },
+    {
+      "noise": 0.04,
+      "true_action_gain": 0.3,
+      "n_episodes": 32,
+      "replicates": 10,
+      "power_permutation": 1.0,
+      "power_ci_gate": 1.0,
+      "median_p_holm": 0.00029997000299970003
+    },
+    {
+      "noise": 0.3,
+      "true_action_gain": 0.0,
+      "n_episodes": 4,
+      "replicates": 10,
+      "power_permutation": 0.0,
+      "power_ci_gate": 0.0,
+      "median_p_holm": 1.0
+    },
+    {
+      "noise": 0.3,
+      "true_action_gain": 0.0,
+      "n_episodes": 8,
+      "replicates": 10,
+      "power_permutation": 0.0,
+      "power_ci_gate": 0.0,
+      "median_p_holm": 1.0
+    },
+    {
+      "noise": 0.3,
+      "true_action_gain": 0.0,
+      "n_episodes": 16,
+      "replicates": 10,
+      "power_permutation": 0.0,
+      "power_ci_gate": 0.0,
+      "median_p_holm": 1.0
+    },
+    {
+      "noise": 0.3,
+      "true_action_gain": 0.0,
+      "n_episodes": 32,
+      "replicates": 10,
+      "power_permutation": 0.0,
+      "power_ci_gate": 0.0,
+      "median_p_holm": 1.0
+    },
+    {
+      "noise": 0.3,
+      "true_action_gain": 0.03,
+      "n_episodes": 4,
+      "replicates": 10,
+      "power_permutation": 0.0,
+      "power_ci_gate": 0.5,
+      "median_p_holm": 0.3686131386861314
+    },
+    {
+      "noise": 0.3,
+      "true_action_gain": 0.03,
+      "n_episodes": 8,
+      "replicates": 10,
+      "power_permutation": 0.4,
+      "power_ci_gate": 0.8,
+      "median_p_holm": 0.058194180581941805
+    },
+    {
+      "noise": 0.3,
+      "true_action_gain": 0.03,
+      "n_episodes": 16,
+      "replicates": 10,
+      "power_permutation": 0.9,
+      "power_ci_gate": 1.0,
+      "median_p_holm": 0.0072992700729927005
+    },
+    {
+      "noise": 0.3,
+      "true_action_gain": 0.03,
+      "n_episodes": 32,
+      "replicates": 10,
+      "power_permutation": 1.0,
+      "power_ci_gate": 1.0,
+      "median_p_holm": 0.00039996000399960006
+    },
+    {
+      "noise": 0.3,
+      "true_action_gain": 0.06,
+      "n_episodes": 4,
+      "replicates": 10,
+      "power_permutation": 0.0,
+      "power_ci_gate": 1.0,
+      "median_p_holm": 0.1865813418658134
+    },
+    {
+      "noise": 0.3,
+      "true_action_gain": 0.06,
+      "n_episodes": 8,
+      "replicates": 10,
+      "power_permutation": 1.0,
+      "power_ci_gate": 1.0,
+      "median_p_holm": 0.012598740125987402
+    },
+    {
+      "noise": 0.3,
+      "true_action_gain": 0.06,
+      "n_episodes": 16,
+      "replicates": 10,
+      "power_permutation": 1.0,
+      "power_ci_gate": 1.0,
+      "median_p_holm": 0.00029997000299970003
+    },
+    {
+      "noise": 0.3,
+      "true_action_gain": 0.06,
+      "n_episodes": 32,
+      "replicates": 10,
+      "power_permutation": 1.0,
+      "power_ci_gate": 1.0,
+      "median_p_holm": 0.00029997000299970003
+    },
+    {
+      "noise": 0.3,
+      "true_action_gain": 0.12,
+      "n_episodes": 4,
+      "replicates": 10,
+      "power_permutation": 0.0,
+      "power_ci_gate": 1.0,
+      "median_p_holm": 0.1865813418658134
+    },
+    {
+      "noise": 0.3,
+      "true_action_gain": 0.12,
+      "n_episodes": 8,
+      "replicates": 10,
+      "power_permutation": 1.0,
+      "power_ci_gate": 1.0,
+      "median_p_holm": 0.012598740125987402
+    },
+    {
+      "noise": 0.3,
+      "true_action_gain": 0.12,
+      "n_episodes": 16,
+      "replicates": 10,
+      "power_permutation": 1.0,
+      "power_ci_gate": 1.0,
+      "median_p_holm": 0.00029997000299970003
+    },
+    {
+      "noise": 0.3,
+      "true_action_gain": 0.12,
+      "n_episodes": 32,
+      "replicates": 10,
+      "power_permutation": 1.0,
+      "power_ci_gate": 1.0,
+      "median_p_holm": 0.00029997000299970003
+    },
+    {
+      "noise": 0.3,
+      "true_action_gain": 0.3,
+      "n_episodes": 4,
+      "replicates": 10,
+      "power_permutation": 0.0,
+      "power_ci_gate": 1.0,
+      "median_p_holm": 0.1865813418658134
+    },
+    {
+      "noise": 0.3,
+      "true_action_gain": 0.3,
+      "n_episodes": 8,
+      "replicates": 10,
+      "power_permutation": 1.0,
+      "power_ci_gate": 1.0,
+      "median_p_holm": 0.012598740125987402
+    },
+    {
+      "noise": 0.3,
+      "true_action_gain": 0.3,
+      "n_episodes": 16,
+      "replicates": 10,
+      "power_permutation": 1.0,
+      "power_ci_gate": 1.0,
+      "median_p_holm": 0.00029997000299970003
+    },
+    {
+      "noise": 0.3,
+      "true_action_gain": 0.3,
+      "n_episodes": 32,
+      "replicates": 10,
+      "power_permutation": 1.0,
+      "power_ci_gate": 1.0,
+      "median_p_holm": 0.00029997000299970003
+    }
+  ],
+  "cost_model": {
+    "per_rollout_seconds_a100": 120.0,
+    "a100_usd_per_hour": 1.19,
+    "rows": [
+      {
+        "n_episodes": 4,
+        "rollouts_per_model": 92,
+        "a100_hours_per_model": 3.1,
+        "usd_per_model_at_1.19": 3.65
+      },
+      {
+        "n_episodes": 8,
+        "rollouts_per_model": 184,
+        "a100_hours_per_model": 6.1,
+        "usd_per_model_at_1.19": 7.3
+      },
+      {
+        "n_episodes": 16,
+        "rollouts_per_model": 368,
+        "a100_hours_per_model": 12.3,
+        "usd_per_model_at_1.19": 14.6
+      },
+      {
+        "n_episodes": 32,
+        "rollouts_per_model": 736,
+        "a100_hours_per_model": 24.5,
+        "usd_per_model_at_1.19": 29.19
+      },
+      {
+        "n_episodes": 50,
+        "rollouts_per_model": 1150,
+        "a100_hours_per_model": 38.3,
+        "usd_per_model_at_1.19": 45.62
+      }
+    ]
+  },
+  "elapsed_seconds": 198.47730898857117
+}
