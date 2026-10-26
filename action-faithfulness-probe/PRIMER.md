@@ -72,7 +72,7 @@ THIS REPO: a training-free, horizon-resolved, judge-free action-sensitivity prob
 | `afp/report.py` | leaderboard / plane / plots | V |
 | `afp/adapters/` | `mock.py` (synthetic oracles) + guarded real adapters (Cosmos-SAC, IRASim, Ctrl-World) | IV, V |
 | `afp/cli.py` | the `afp gen-data` / `afp run` command line | V |
-| `DESIGN.md` (repo root's sibling) | the executable design doc + staged GO/KILL gates + full changelog | IV, VI |
+| `afp/DESIGN.md` | the executable design doc + staged GO/KILL gates + full changelog | IV, VI |
 
 > Checkpoint 0. You can draw the dependency graph above from memory and name
 > what each top-level file in `afp/` is responsible for.
