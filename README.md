@@ -2,9 +2,9 @@
 
 # Action Faithfulness in Robot Video World Models
 
-This repository studies whether action-conditioned video world models for robotics respond to the actions they are given. Their training data is dominated by successful demonstrations, so a model can lower its reconstruction loss by predicting the outcome the instruction implies and treating the per-step actions as optional. A model that does this produces plausible futures but cannot support planning, because its predictions barely change with the variable a planner controls. The paper draft calls this the causal conditioning gap.
+This study investigates whether **action-conditioned video world models for robotics** respond to the actions they are given. Their training data is dominated by successful demonstrations, so a model can lower its reconstruction loss by predicting the outcome the instruction implies and treating the per-step actions as optional. A model that does this produces plausible futures but cannot support planning, because its predictions barely change with the variable a planner controls. The paper draft calls this the causal conditioning gap.
 
-The main artifact is the [Action-Faithfulness Probe](action-faithfulness-probe/) (AFP), a Python harness that measures the gap on a black-box checkpoint. It runs paired rollouts with the same start frame and seed, perturbs either the action chunk or the instruction, and compares how strongly each channel moves the predicted frames over the rollout horizon. The image above shows one synthetic episode: negating the actions reverses the trajectory of the action-faithful mock, but barely changes the instruction-driven mock.
+The main artifact is the **[Action-Faithfulness Probe](action-faithfulness-probe/) (AFP)**, a Python harness that measures the gap on a black-box checkpoint. It runs paired rollouts with the same start frame and seed, perturbs either the action chunk or the instruction, and compares how strongly each channel moves the predicted frames over the rollout horizon. The image above shows one synthetic episode: negating the actions reverses the trajectory of the action-faithful mock, but barely changes the instruction-driven mock.
 
 ## Status
 
